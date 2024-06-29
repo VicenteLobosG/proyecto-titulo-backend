@@ -6,7 +6,7 @@ from proyecto_titulo_backend.base_service import BaseModelService
 
 @api_controller('/products')
 class ProductController(ModelControllerBase):
-    service = BaseModelService(model=Product, custom_schema=ProductCreateUpdateSchema)
+    service = BaseModelService(model=Product, fk_validation_schema=ProductCreateUpdateSchema)
     model_config = ModelConfig(
         model=Product,
         schema_config=ModelSchemaConfig(read_only_fields=['id']),
