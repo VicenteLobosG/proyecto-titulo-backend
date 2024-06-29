@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'control_productos',
+    'registro_ventas',
     'ninja_extra',
     'ninja_jwt',
     'corsheaders',
