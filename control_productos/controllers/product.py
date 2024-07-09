@@ -1,7 +1,7 @@
 from ninja_extra import api_controller, ModelControllerBase, ModelConfig, ModelSchemaConfig, ModelService
 
 from control_productos.models import Product
-from control_productos.schemas.product import ProductCreateUpdateSchema
+from control_productos.schemas import ProductCreateUpdateSchema
     
 
 @api_controller('/products')
